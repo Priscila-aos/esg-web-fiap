@@ -1,0 +1,67 @@
+<section class="container criar-atividade ff-inter">
+  <header class="header">
+    <h2>Formulário para cadastrar <br />Ações sustentáveis:</h2>
+  </header>
+  <form>
+    <label for="criar-titulo">Título</label>
+    <input type="textarea" class="input" id="criar-titulo" name="criar-titulo" placeholder="Descreva o Título" [(ngModel)]="atividade.titulo"/>
+    <label for="criar-descricao">Descrição</label>
+    <input type="textarea" class="input" id="criar-descricao" name="criar-descricao" [(ngModel)]="atividade.descricao"
+      placeholder="Descreva a ação sustentável: reciclagem, consumo de produtos biodegradáveis, separação do lixo para coleta seletiva e outros." />
+    <label for="modelo">Selecione a categoria da atividade:</label>
+    <div class="container-radio" [(ngModel)]="atividade.categoria">
+      <div class="radio-modelo">
+        <label for="coleta-seletiva">
+          <input type="radio" id="coleta-seletiva" value="coleta-seletiva" name="radio-esg" checked/>
+          <div class="custom-radio">
+            <span></span>
+          </div>
+          <span>COLETA SELETIVA</span>
+        </label>
+      </div>
+
+      <div class="radio-modelo">
+        <label for="cultivo-horta-domestica">
+          <input type="radio" id="cultivo-horta-domestica" value="cultivo-horta-domestica" name="radio-esg" />
+          <div class="custom-radio">
+            <span></span>
+          </div>
+          <span>CULTIVO HORTA DOMÉSTICA</span>
+        </label>
+      </div>
+
+      <div class="radio-modelo">
+        <label for="voluntariado">
+          <input type="radio" id="voluntariado" value="voluntariado" name="radio-esg" />
+          <div class="custom-radio">
+            <span></span>
+          </div>
+          <span>VOLUNTARIADO</span>
+        </label>
+      </div>
+      <div class="radio-modelo">
+        <label for="pratica-atividades-fisicas">
+          <input type="radio" id="pratica-atividades-fisicas" value="pratica-atividades-fisicas" name="radio-esg" />
+          <div class="custom-radio">
+            <span></span>
+          </div>
+          <span>PRÁTICA ATIVIDADES FÍSICAS</span>
+        </label>
+        
+      </div>
+      <div class="radio-modelo">
+        <label for="habitos-alimentares-saudaveis">
+          <input type="radio" id="habitos-alimentares-saudaveis" value="habitos-alimentares-saudaveis" name="radio-esg" />
+          <div class="custom-radio">
+            <span></span>
+          </div>
+          <span>HÁBITOS ALIMENTARES SAUDÁVEIS</span>
+        </label>
+      </div>
+    </div>
+    <div class="acoes">
+      <button class="botao" (click)="onSaveAtividade()">Salvar</button>
+      <button class="botao">Cancelar</button>
+    </div>
+  </form>
+</section>
