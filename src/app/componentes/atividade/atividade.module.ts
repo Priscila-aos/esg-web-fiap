@@ -3,11 +3,12 @@ import { CriarAtividadeComponent } from './criar-atividade/criar-atividade.compo
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { ListarAtividadesComponent } from './listar-atividades/listar-atividades.component';
 
 
 
 @NgModule({
-  declarations: [ CriarAtividadeComponent ],
+  declarations: [ CriarAtividadeComponent, ListarAtividadesComponent ],
   imports: [
     CommonModule, FormsModule
   ],

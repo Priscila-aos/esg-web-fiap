@@ -5,7 +5,7 @@ export class Atividade {
     id!: number;
     titulo!: string;
     descricao!: string;
-    categoria!: Categoria;
+    categoria!: string;
     usuarioId!: number;
 
 

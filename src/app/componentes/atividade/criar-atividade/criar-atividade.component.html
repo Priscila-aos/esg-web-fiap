@@ -11,7 +11,7 @@
     <div class="container-radio" >
       <div class="radio-modelo">
         <label for="coleta-seletiva">
-          <input type="radio" id="coleta-seletiva" value="coleta-seletiva" name="radio-esg" [(ngModel)]="atividade.categoria" checked=checked/>
+          <input type="radio" id="coleta-seletiva" value="COLETA_SELETIVA" checked name="radio-esg" [(ngModel)]="atividade.categoria" />
           <div class="custom-radio">
             <span></span>
           </div>
@@ -57,11 +57,11 @@
           <span>HÁBITOS ALIMENTARES SAUDÁVEIS</span>
         </label>
       </div>
-
     </div>
     <div class="acoes">
       <button class="botao" (click)="onSaveAtividade()">Salvar</button>
       <button class="botao">Cancelar</button>
     </div>
   </form>
+  
 </section>

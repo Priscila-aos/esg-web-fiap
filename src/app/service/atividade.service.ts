@@ -18,9 +18,7 @@ export class AtividadeService {
 
 
   getAtividade(id: number) : Observable<Atividade> {
-    let queryParams = new HttpParams();
-    queryParams = queryParams.append("id",id);
-    return this.httpClient.get<Atividade>(this.url + `/{id}`, { params: queryParams });
+    return this.httpClient.get<Atividade>(this.url + `/` + id);
   }
 
   postAtividade(atividade: Atividade) : Observable<Atividade> {
@@ -30,13 +28,11 @@ export class AtividadeService {
   putAtividade(id: number, atividade: Atividade) : Observable<Atividade> {
     let queryParams = new HttpParams();
     queryParams = queryParams.append("id",id);
-    return this.httpClient.put<Atividade>(this.url + `/{id}`, atividade, { params: queryParams });
+    return this.httpClient.put<Atividade>(this.url + `/` + id, atividade);
   }
 
   deleteAtividade(id: number) : Observable<void> {
-    let queryParams = new HttpParams();
-    queryParams = queryParams.append("id",id);
-    return this.httpClient.delete<void>(this.url + `/{id}`, { params: queryParams });
+    return this.httpClient.delete<void>(this.url + `/` + id);
   }  
 
 }

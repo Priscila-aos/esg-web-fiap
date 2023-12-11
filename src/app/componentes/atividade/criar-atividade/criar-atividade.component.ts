@@ -18,7 +18,7 @@ export class CriarAtividadeComponent implements OnInit {
     id: -1,
     titulo: "",
     descricao: "",
-    categoria: Categoria.CULTIVO_HORTA_DOMESTICA,
+    categoria: "",
     usuarioId: 1
   }
 
@@ -29,7 +29,7 @@ export class CriarAtividadeComponent implements OnInit {
 
 
   ngOnInit(): void {
-    console.log(this.injector);
+    console.log(this.atividades);
     this.atividades = this.retornaAtividades();
   }
 
@@ -61,9 +61,15 @@ export class CriarAtividadeComponent implements OnInit {
   }
 
   onEdit(atividade: Atividade) {
-    console.log(atividade);
+    console.log(this.atividades);
     this.service.putAtividade(atividade.id, atividade).subscribe(result => {
-      this.atividades.push(result);
+      this.atividades = this.atividades.map(atv => {
+          if (atv.id == result.id){
+            return result;
+          } else{
+            return atv;
+          } 
+      });
       console.log(result);
       console.log(this.atividades);
     }, error => {
@@ -74,7 +80,7 @@ export class CriarAtividadeComponent implements OnInit {
   onDelete(atividade: Atividade) {
     console.log(atividade);
     this.service.deleteAtividade(atividade.id).subscribe(() => {
-      this.atividades = this.atividades.filter(atv => atv.id == atividade.id)
+      this.atividades = this.atividades.filter(atv => atv.id != atividade.id)
     }, error => {
       alert("Something went wrong")
     })
