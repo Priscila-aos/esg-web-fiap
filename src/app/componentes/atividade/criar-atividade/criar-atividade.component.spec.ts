@@ -1,5 +1,4 @@
-import { RodapeComponent } from './../../rodape/rodape.component';
-import { CabecalhoComponent } from './../../cabecalho/cabecalho.component';
+import { AtividadeModule } from './../atividade.module';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
@@ -12,9 +11,8 @@ describe('CriarAtividadeComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ HttpClientModule, CommonModule],
-      declarations: [ CriarAtividadeComponent, CabecalhoComponent, RodapeComponent ],
-      providers: []
+      imports: [ HttpClientModule, CommonModule, AtividadeModule ],
+      declarations: [ CriarAtividadeComponent ]
     })
     .compileComponents();
     

@@ -1,8 +1,6 @@
-import { CommonModule } from '@angular/common';
-import { HttpClientModule } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl } from '@angular/forms';
+import { Component, Inject, Injector, OnInit } from '@angular/core';
 import { Atividade } from '../../../model/atividade.model';
+import { Categoria } from '../../../model/categoria.enum';
 import { AtividadeService } from '../../../service/atividade.service';
 
 @Component({
@@ -20,16 +18,18 @@ export class CriarAtividadeComponent implements OnInit {
     id: -1,
     titulo: "",
     descricao: "",
-    categoria: "",
+    categoria: Categoria.CULTIVO_HORTA_DOMESTICA,
     usuarioId: 1
   }
 
-  constructor(private service: AtividadeService) {
-   
+  constructor(@Inject(Injector) private injector: Injector, private service: AtividadeService) {
+    console.log(this.injector);
+    this.service = this.injector.get(AtividadeService);
   }
 
 
   ngOnInit(): void {
+    console.log(this.injector);
     this.atividades = this.retornaAtividades();
   }
 
@@ -50,8 +50,7 @@ export class CriarAtividadeComponent implements OnInit {
 
 
   onSaveAtividade() {
-    console.log(this.atividade.titulo);
-  
+    console.log(this.atividade.categoria);
     this.service.postAtividade(this.atividade).subscribe(result => {
       this.atividades.push(result);
       console.log(result);

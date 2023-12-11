@@ -1,0 +1,16 @@
+import { AtividadeService } from './../../service/atividade.service';
+import { CriarAtividadeComponent } from './criar-atividade/criar-atividade.component';
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+
+
+
+@NgModule({
+  declarations: [ CriarAtividadeComponent ],
+  imports: [
+    CommonModule, FormsModule
+  ],
+  exports: [ CriarAtividadeComponent ]
+})
+export class AtividadeModule { }
