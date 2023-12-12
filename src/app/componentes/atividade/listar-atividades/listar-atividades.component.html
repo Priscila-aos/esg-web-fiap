@@ -6,7 +6,7 @@
     </header>
     <div class="mural" *ngIf="atividades.length > 0, else semAtividades">
       <div *ngFor="let atividade of atividades">
-        <div>
+        <div class="atividade">
             <div>
                 <label class="ff-inter">Título</label>
                 <h5 class="ff-inter">{{atividade.titulo}}</h5>
