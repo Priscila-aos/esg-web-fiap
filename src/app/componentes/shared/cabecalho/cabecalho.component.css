@@ -2,8 +2,8 @@
     /* background: url(); */
     background-size: cover;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: flex-start;
+    justify-content: flex-start;
   }
 
   .cabecalho .logo {

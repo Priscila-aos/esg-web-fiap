@@ -1,5 +1,4 @@
-import { mergeApplicationConfig, ApplicationConfig } from '@angular/core';
-import { provideServerRendering } from '@angular/platform-server';
+import { ApplicationConfig } from '@angular/platform-browser';
 import { appConfig } from './app.config';
 
 const serverConfig: ApplicationConfig = {
@@ -9,3 +8,11 @@ const serverConfig: ApplicationConfig = {
 };
 
 export const config = mergeApplicationConfig(appConfig, serverConfig);
+function provideServerRendering(): import("@angular/core").Provider | import("@angular/core").ImportedNgModuleProviders {
+  throw new Error('Function not implemented.');
+}
+
+function mergeApplicationConfig(appConfig: ApplicationConfig, serverConfig: ApplicationConfig) {
+  throw new Error('Function not implemented.');
+}
+

@@ -1,0 +1,30 @@
+.mural {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin: 1rem 0 2rem;
+  }
+  
+  .d-flex{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .sem-atividades {
+    text-align: center;
+    padding: 2rem 0 5rem;
+  }
+
+  .botoes {
+    display: flex;
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+
+  .edit {
+    margin-right: 50px;
+  }
+
+  
