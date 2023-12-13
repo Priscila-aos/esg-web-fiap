@@ -13,7 +13,7 @@ Para iniciar o projeto, utilize o comando `ng serve` e acesse `http://localhost:
 ## Execução da Parte Back-end do Projeto:
 Para executar o projeto, abra a aplicação em uma IDE, como IntelliJ ou Eclipse, e execute-a na porta  `http://localhost:8080.`
 
-## Outras partes do projeto
-### O projeto também possui uma parte mobile, que está disponível no repositório [Mobile](https://github.com/luizgolima/fiap-embrace-esg)
+### Outras partes do projeto
+O projeto também inclui uma parte mobile, a qual está disponível no repositório [EmbraceEsg-Mobile](https://github.com/luizgolima/fiap-embrace-esg)
 
  
