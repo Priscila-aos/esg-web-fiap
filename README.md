@@ -1,8 +1,9 @@
-# Atividade ESG FIAP - Embrace ESG
+# Embrace ESG
 
 ## Introdução:
 Esta atividade foi elaborada para realizar o cadastro de informações relacionadas a ações sustentáveis, desenvolvida como parte de uma atividade do curso de Sistemas da Internet pela FIAP.
-###Tecnologias utilizadas no projeto:
+
+### Tecnologias utilizadas no projeto:
 - Angular
 - Java Spring
 
