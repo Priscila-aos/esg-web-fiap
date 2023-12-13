@@ -1,6 +1,6 @@
-# Atividade ESG Fiap
+# Atividade ESG FIAP
 
-Este projeto foi gerado com o Angular CLI na versão 17.0.6.
+Esta atividade foi elaborada para realizar o cadastro de informações relacionadas a ações sustentáveis.
 
-## URL
+## Sobre o projeto
 Ao rodar o projeto, navegue até a URL http://localhost:4200/criar-atividade para visualizar a aplicação.
