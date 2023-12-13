@@ -1,6 +1,6 @@
 # Embrace ESG
 
-## Introdução:
+## Introdução
 Esse projeto foi desenvolvido como parte de uma atividade do curso de Sistemas da Internet na FIAP, com o propósito de cadastrar informações relacionadas a práticas sustentáveis..
 
 ### Tecnologias utilizadas no projeto:
@@ -13,7 +13,7 @@ Para iniciar o projeto, utilize o comando `ng serve` e acesse `http://localhost:
 ## Execução da Parte Back-end do Projeto:
 Para executar o projeto, abra a aplicação em uma IDE, como IntelliJ ou Eclipse, e execute-a na porta  `http://localhost:8080.`
 
-### Outras partes do projeto
+### Outra parte do projeto
 O projeto também inclui uma parte mobile, a qual está disponível no repositório [EmbraceEsg-Mobile](https://github.com/luizgolima/fiap-embrace-esg)
 
  
