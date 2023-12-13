@@ -1,7 +1,7 @@
 # Embrace ESG
 
 ## Introdução:
-Esta atividade foi elaborada para realizar o cadastro de informações relacionadas a ações sustentáveis, desenvolvida como parte de uma atividade do curso de Sistemas da Internet pela FIAP.
+Esse projeto foi desenvolvido como parte de uma atividade do curso de Sistemas da Internet na FIAP, com o propósito de cadastrar informações relacionadas a práticas sustentáveis..
 
 ### Tecnologias utilizadas no projeto:
 - Angular
