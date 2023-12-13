@@ -17,6 +17,10 @@
     padding: 2rem 0 5rem;
   }
 
+  p {
+    text-align: center;
+  }
+
   .botoes {
     display: flex;
     margin-right: 50px;
